@@ -126,6 +126,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+venv-pamila/
 ENV/
 env.bak/
 venv.bak/
