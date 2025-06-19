@@ -1,0 +1,7 @@
+- id: PC_QF1C01A
+  interface:
+    setpoint: CHANNEL:QF1C01A:SP
+    readback: CHANNEL:QF1C01A:RB
+  response:
+    settle_time: 0.5
+    timeout: 2.0

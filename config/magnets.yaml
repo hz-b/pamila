@@ -1,0 +1,17 @@
+- elem_id: QF1C01A
+  dev_id: QF1C01A
+  type: quadrupole
+  power_converter_id: PC_QF1C01A
+  conversion:
+    intercept: 0.1
+    slope: 0.02
+    conversion_type: linear
+
+- elem_id: QF1C01B
+  dev_id: QF1C01B
+  type: quadrupole
+  power_converter_id: PC_QF1C01A
+  conversion:
+    intercept: 0.15
+    slope: 0.025
+    conversion_type: linear
