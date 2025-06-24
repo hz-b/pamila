@@ -44,7 +44,8 @@ class QuadrupoleResponse:
 
 def exec_step(sr, dK: float) -> TuneMeasurement:
     sr.quad.K = sr.ref_value + dK
-    tunes = ring.get_optics(ATall)[1]['tune']
+    stat, summary, twiss =  ring.get_optics(ATall)
+    tunes = summary['tune']
     return TuneMeasurement(
         dK=dK,
         tunes=Tunes(x=tunes[0],y=tunes[1])
