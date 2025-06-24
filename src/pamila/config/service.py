@@ -4,6 +4,10 @@ from .repository.file_repository import FileRepository
 
 
 class ConfigService:
+    """
+    todo: the init is FileRepository specific, expand it to db in the next step
+    """
+
     def __init__(self, magnet_path: str, pc_path: str):
         self.magnet_repo = FileRepository(MagneticObject, magnet_path)
         self.pc_repo = FileRepository(PowerConverter, pc_path)
@@ -16,6 +20,11 @@ class ConfigService:
 
     def get_magnets(self):
         return self._magnets
+
+    def get_quadrupoles(self) -> list[MagneticObject]:
+        if self._magnets is None:
+            raise RuntimeError("Configuration not loaded.")
+        return [quad for quad in self._magnets if quad.type == "quadrupole"]
 
     def get_power_converter(self, id):
         return self._power_converters[id]

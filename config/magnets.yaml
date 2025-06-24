@@ -1,6 +1,7 @@
 - elem_id: QF1C01A
   dev_id: QF1C01A
   type: quadrupole
+  family_member: horizontal_tune_corrector
   power_converter_id: PC_QF1C01A
   conversion:
     intercept: 0.1
@@ -10,6 +11,7 @@
 - elem_id: QF1C01B
   dev_id: QF1C01B
   type: quadrupole
+  family_member: vertical_tune_corrector
   power_converter_id: PC_QF1C01A
   conversion:
     intercept: 0.15

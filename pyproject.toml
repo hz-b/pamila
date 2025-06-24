@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 name = "pamila"
 version = "0.0.0"
 description = "python accelerator middle layer"
-authors = ["Hidaka, Yoshiteru"]
+authors = ["Wahedullah Sulaiman Khail", "Hidaka, Yoshiteru"]
 license = "GPL-3.0"
 # until we have the repoitory
 # poerty is picky
@@ -17,3 +17,7 @@ keywords = []
 
 [tool.poetry.dependencies]
 python = ">=3.7"
+pydantic = "*"
+# PAckages below here are to be revisited if we need to depend on them
+lat2db= "*"
+ophyd-async = "*"
